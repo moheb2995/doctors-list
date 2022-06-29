@@ -1,8 +1,13 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-align:center;
-background-color: rgb(188, 223, 235) ;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align:center;
+}
+
+body{
+  background-color: rgb(188, 223, 235) ;
+
 }
 
 .Loading{
@@ -14,16 +19,16 @@ background-color: rgb(188, 223, 235) ;
 }
 
 .card{
-  display: inline-table;
-  
-  margin: 10%;
-  padding: 1%;
+  display: flex;
+  margin: 1%;
+  /* padding: 1%; */
   /* background-color: deepskyblue; */
 
 }
 .img{
 border: darkviolet solid;
-width: 40vw;
+width: 110px;
+margin: 10px;
 }
 .p{
   font-size: x-large;

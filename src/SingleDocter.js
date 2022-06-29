@@ -28,13 +28,9 @@ const SingleDocter=()=>{
       <p> تجربه  : {doc.expertiesYear} سال </p><br/>
       <p> آدرس : {doc.address}</p><br/>
       <p> دانشگاه : {doc.university.name}</p>
-          
-
-    
-          
-          <Link to={`/`}>
-          <button className="btn"> BACK TO LIST</button>
-          </Link>
+      <Link to={`/`}>
+      <button className="btn"> BACK TO LIST</button>
+      </Link>
     </div>
   )
 }
