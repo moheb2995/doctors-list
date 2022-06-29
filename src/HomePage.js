@@ -3,23 +3,17 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {Pagination} from "@mui/material"
 import Stack from '@mui/material/Stack';
-import { useSearchParams , useLocation } from 'react-router-dom';
 
 const Home=()=>{
   const [doctors,setdoctors] = useState([])
   const [pag,setpag] = useState(null)
-
   const total = 999
-  // const [update,setupdate] = useState(false)
-
 
   useEffect(() => {
-
     const urlSearchParams = new URLSearchParams(window.location.search);
     const page = urlSearchParams.get('page')
 
     const number = page ? page : 0
-
     setpag(number)
 
   }, [])
@@ -33,9 +27,7 @@ const Home=()=>{
         return setdoctors(data)
       })
     }
-
   },[pag])
-  // console.log(window.history);
 
 return(
   Object.entries(doctors).length === 0
